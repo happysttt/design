@@ -74,6 +74,9 @@ a{
     border-radius: 40px;
 }
 @media  screen and (max-width:968px){
+    body{
+        overflow:hidden;
+    }
     .aeb{
         margin: 20px;
         height:40px
@@ -84,7 +87,7 @@ a{
     }
     .text{
         margin-top: 20px;
-        width:95vw;
+        width:85vw;
     }
     .ticket{
         margin-top: 70px;
