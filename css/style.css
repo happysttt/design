@@ -1,85 +1,45 @@
 @font-face {
     font-family: comfortaa;
-    src: url(../10821.ttf);
+    src: url(../ttf/10821.ttf);
 }
-
 body{
-	margin: 0;
-	font-family: comfortaa;
-	background: 
-        linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-       
-        url(../img/5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin:0;
+    padding: 0;
+    background : url(../img/5.jpg) no-repeat;
+    background-size:cover;
     background-position: center top;
     height: 100vh;
-    overflow: hidden;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.boxi{
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 .aeb{
-	position: absolute;
-	height: 8vw;
-	left: 2vw;
-	top: 4vw;
+    margin: 20px;
+
 }
 .cy{
-	position: absolute;
-	height: 8vw;
-	left: 69vw;
-	top: 4vw;
+    margin:20px;
 }
-.text{
-	position: absolute;
-	top: 22vh;
-	width: 50vw;
-	margin-left: 25vw;
-	color: white;
-	font-family: comfortaa;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3.3vw;
-	line-height: 3.9vw;
-	text-align: center;
+a{
+    margin:20px
 }
-.img1{
-	width: 20vw;
-	margin-left: 40vw;
-	margin-top: 60vh;
-	transition: 0.3s; 
-animation: puls 0.8s normal infinite;
-background: rgba(0,0,0,0.6);
- 
+@keyframes puls{
+    0%{
+        box-shadow: 0 0 1px 0 rgba(0,0,0,0.4);
+        border-radius: 40px;
+    }
+    100%{
+        box-shadow: 0 0 1px 30px rgba(0,0,0,0);
+        border-radius: 40px;
+    }
 }
-.img2{
-	width: 30vw;
-	margin-left: 35vw;
-}
-h1{
-	position: absolute;
-	top: 47vh;
-	color: white;
-	width: 50vw;
-	margin-left: 25vw;
-	font-family: comfortaa;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3.3vw;
-	line-height: 4vw;
-	text-align: center;
-
-}
-
-@keyframes puls{ 
-0%{ 
-box-shadow: 0 0 1px 0 rgba(0,0,0,0.3);
-border-radius: 40px;
-} 
-100%{ 
-box-shadow: 0 0 1px 30px rgba(0,0,0,0.5);
-border-radius: 40px;
-} 
-}
-
 .ticket{
     border: none;
     animation: puls 0.9s infinite;
@@ -88,14 +48,8 @@ border-radius: 40px;
     vertical-align: middle;
     padding: 8px 25px;
     margin: auto;
-    display:block;
-    left:0;
-    top:0;
     text-align: center;
-    width: 300px;
-    height: 75px;
-    font-family: Montserrat;
-    font-style: normal;
+    font-family: Comfortaa;
     font-weight: 600;
     font-size: 40px;
     line-height: normal;
@@ -103,52 +57,40 @@ border-radius: 40px;
     box-shadow: 0px 4px 15px rgba(235, 31, 79, 0.5);
     border-radius: 40px;
 }
-.ticket{
-	position:absolute;
+.download{
     border: none;
     color: #fff;
     cursor: pointer;
     vertical-align: middle;
     padding: 8px 25px;
-    display:block;
-    top:67vh;
-    left:50%;
-    margin-left: -200px;
+    margin: auto;
     text-align: center;
-    width: 400px;
-    height: 75px;
-    font-family: comfortaa;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: normal;
-    text-decoration: none;
-    background: linear-gradient(301.64deg, #EB1F4F 9.52%, #ED4A04 86.63%);
-    box-shadow: 0px 4px 15px rgba(235, 31, 79, 0.5);
-    border-radius: 40px;
-}
-
-.ticket1{
-	position:absolute ;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    vertical-align: middle;
-    padding: 8px 25px;
-    display:block;
-    top:85vh;
-    text-align: center;
-    width: 400px;
-    height: 65px;
-    left:50%;
-    margin-left: -200px;
-    font-family: comfortaa;
-    font-style: normal;
+    font-family: Comfortaa;
     font-weight: 600;
     font-size: 20px;
     line-height: normal;
-    text-decoration: none;
     background: linear-gradient(301.64deg, #EB1F4F 9.52%, #ED4A04 86.63%);
     box-shadow: 0px 4px 15px rgba(235, 31, 79, 0.5);
     border-radius: 40px;
+}
+@media  screen and (max-width:968px){
+    .aeb{
+        margin: 20px;
+        height:60px
+    }
+    .cy{
+        margin:20px;
+        height:60px
+    }
+    .text{
+        margin-top: 20px;
+        width:80vw;
+    }
+    .ticket{
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    .download{
+        font-size: 15px;
+    }
 }
