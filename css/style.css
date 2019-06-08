@@ -76,15 +76,15 @@ a{
 @media  screen and (max-width:968px){
     .aeb{
         margin: 20px;
-        height:60px
+        height:40px
     }
     .cy{
         margin:20px;
-        height:60px
+        height:40px
     }
     .text{
         margin-top: 20px;
-        width:80vw;
+        width:95vw;
     }
     .ticket{
         margin-top: 70px;
